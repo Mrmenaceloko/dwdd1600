@@ -24,7 +24,7 @@ dl {
 }
 
 dt {
-    color: #b40412;
+    color: #2f3133;
     font-weight: 700;
 }
 
@@ -73,7 +73,7 @@ nav a {
 
 nav li.active a {
     background-color: #024873;
-    color: #f2b705;
+    color: #black;
 }
 
 nav a:hover {
@@ -175,3 +175,5 @@ footer {
 footer a {
     color: #024873;
 }
+
+
