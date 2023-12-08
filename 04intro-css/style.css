@@ -1,0 +1,178 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* Styling Lists */
+.circle-bullet {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.square-bullet {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Styling Definition List */
+dl {
+    border: 1px solid #024873;
+    padding: 10px;
+}
+
+dt {
+    color: #2f3133;
+    font-weight: 700;
+}
+
+dd {
+    color: #024873;
+    font-size: 0.9rem;
+}
+
+/* Header styling */
+header {
+    background-color: #eaeaea;
+    padding: 1rem 2vw;
+}
+
+header h1 {
+    margin: 0;
+    color: #024873;
+}
+
+header p {
+    margin: 0;
+    color: #024873;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation styling */
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: 700;
+    display: block;
+    padding: 0.83rem 2rem;
+}
+
+nav li.active a {
+    background-color: #000000;
+    color: #024873;
+
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Main content styling */
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #024873;
+    font-size: 2rem;
+}
+
+main h2 {
+    color: #024873;
+    margin-bottom: 0.2rem;
+}
+
+main p {
+    color: #2f3133;
+    margin: 0 0 0.3rem 0;
+}
+
+/* Lists styling */
+main ol, main ul {
+    padding: 0.5rem 3vw;
+    margin-bottom: 1rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ol {
+    list-style-type: decimal;
+    background-color: #efefef;
+}
+
+main ul, main ol {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+main ul li, main ol li {
+    line-height: 125%;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Definition list styling */
+main dl {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+main dl dt {
+    color: #b40412;
+    font-weight: 700;
+}
+
+main dl dd {
+    color: #024873;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Address styling */
+main address {
+    font-style: normal;
+    background-color: #f2b705;
+    padding: 0.5rem;
+    width: 12.5rem;
+    border: 1px solid #024873;
+    border-radius: 0.5rem;
+}
+
+/* Links styling */
+main a {
+    color: #024873;
+}
+
+main a:hover {
+    color: rgb(239, 0, 24);
+}
+
+/* Footer styling */
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    color: #024873;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+}
+
+footer a {
+    color: #024873;
+}
