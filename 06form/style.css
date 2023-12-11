@@ -24,7 +24,7 @@ dl {
 }
 
 dt {
-    color: #2f3133;
+    color: #024873;
     font-weight: 700;
 }
 
@@ -108,7 +108,7 @@ main h2 {
 }
 
 main p {
-    color: #2f3133;
+    color: #024873;
     margin: 0 0 0.3rem 0;
 }
 
@@ -229,3 +229,59 @@ footer a {
     
     
 }
+/* form styles */
+.myForm fieldset {
+    border: 1px solid #024873;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #024873;
+}
+
+.myForm label {
+    margin: 0.5rem;
+}
+
+.myForm label,
+.myForm select,
+.myForm [type="text"],
+.myForm [type="tel"],
+.myForm textarea {
+    display: block;
+}
+
+.myForm [type="text"],
+.myForm [type="phone"]
+.myForm [type="email"],
+.myForm select,
+.myForm textarea {
+    border: solid 1px #024873;
+    padding: 0.3rem;
+    width: 250px;
+    border-radius: 0.3rem;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(156, 51, 53, 0.1);
+    border: solid 1px #024873;
+    padding: 0.3rem;
+    width: 250px;
+    border-radius: 0.3rem;;
+}
+
+.myForm [type="submit"] {
+    background-color: #024873;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+.style h1
+{color: #024873;}
