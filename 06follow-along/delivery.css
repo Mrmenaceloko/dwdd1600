@@ -110,7 +110,7 @@ footer a {
     }
 .myForm legend{
     color:#43a0b6;
-    font-size: 8rem;
+    
 }
 .myForm label{
     margin:.5rem;
@@ -118,8 +118,8 @@ footer a {
 .myForm label,myForm select, .myForm [type=text],.myForm [type=tel],.myForm textarea{
     display:block;
 }
-.myForm[type=text],.myForm[type=tel], .myForm select, .myForm textarea
-{border: solid 1px #888;
+.myForm[type=text],.myForm[type=tel], myForm select, .myForm textarea
+{border: solid 1px ;
     padding: 3rem;
     width: 25opx;
     border-radius: .3rem;
@@ -129,6 +129,7 @@ footer a {
 }
 .myForm textarea {
     height: 6rem;
+
 
     
 }
