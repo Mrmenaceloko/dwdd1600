@@ -1,5 +1,3 @@
-
-
 {
     box-sizing: border-box;
 }
@@ -7,7 +5,12 @@
 /* Small screens */
 
 @media only screen and (max-width: 600px) {
+        color: blue;  
+    }
 
+    a {
+        color: red; 
+}
 
 nav ul {
         margin: 0;
@@ -24,7 +27,7 @@ nav ul {
         text-transform: uppercase;
         text-align: center;
         border-bottom: solid 1px #aaa;
-        color: #;
+        color: #blue;
     }
 
     nav.active a {
@@ -33,6 +36,265 @@ nav ul {
         color: white;
     }
  
+}
+    nav a:hover{
+        color:#000;
+    }
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* Styling Lists */
+.circle-bullet {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.square-bullet {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Styling Definition List */
+dl {
+    border: 1px solid #024873;
+    padding: 10px;
+}
+
+dt {
+    color: #2f3133;
+    font-weight: 700;
+}
+
+dd {
+    color: #024873;
+    font-size: 0.9rem;
+}
+
+/* Header styling */
+header {
+    background-color: #eaeaea;
+    padding: 1rem 2vw;
+}
+
+header h1 {
+    margin: 0;
+    color: #red;
+}
+
+header p {
+    margin: 0;
+    color: #024873;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation styling */
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 1vw;
+    margin: 0;
+    display: flex;
+}
+
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #024873;
+    font-weight: 700;
+    display: block;
+    padding: 0.83rem ;
+}
+
+nav li.active a {
+    background-color: #000000;
+    color: #ff0000;
+
+}
+
+nav a:hover {
+    color: white;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+figure.wrapped{
+    width:20%;
+    margin:0 0 0 2;
+    float:right;
+    
+}
+figure.wrapped img{
+    width:50%;
+    height:auto
+        
+    
+}
+figure.wrapped
+{
+ text-align: center;
+ font-size: .75rem;
+    
+}
+
+    
+}
+
+.gallery img {
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    margin-bottom: 10px; 
+}
+/* Main content styling */
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #024873;
+    font-size: 2rem;
+}
+
+main h2 {
+    color: #024873;
+    margin-bottom: 0.2rem;
+}
+
+main p {
+    color: #2f3133;
+    margin: 0 0 0.3rem 0;
+}
+
+/* Lists styling */
+main ol, main ul {
+    padding: 0.5rem 3vw;
+    margin-bottom: 1rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ol {
+    list-style-type: decimal;
+    background-color: #efefef;
+}
+
+main ul, main ol {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+main ul li, main ol li {
+    line-height: 125%;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Definition list styling */
+main dl {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+main dl dt {
+    color: #b40412;
+    font-weight: 700;
+}
+
+main dl dd {
+    color: #024873;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Address styling */
+main address {
+    font-style: normal;
+    background-color: #024873;
+    padding: 0.5rem;
+    width: 12.5rem;
+    border: 1px solid #024873;
+    border-radius: 0.5rem;
+}
+
+/* Links styling */
+main a {
+    color: #024873;
+}
+
+main a:hover {
+    color: rgb(239, 0, 24);
+}
+figure {float:right;}
+
+}
+.myForm fieldset{
+    border: 1px solid #024873;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    }
+.myForm legend{
+    color:#024873;
+    
+}
+
+.myForm label{
+    margin:.5rem;
+    }
+.myForm label,myForm select, .myForm [type=text],.myForm [type=tel],.myForm textarea{
+    display:block;
+}
+.myForm[type=text],.myForm[type=tel], myForm select, myForm textarea
+{border: circle 1px #024873;
+    padding: 3rem;
+    width: 25opx;
+    border-radius: .3rem;
+     font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 200;
+    
+}
+.radio-left {
+    text-align: left;
+}
+.myForm textarea {
+    height: 6rem;
+
+    
+}
+.myForm :required {
+    background-color: rgba(156,51,53,0.1);
+}
+.myForm [type=submit]{
+    background-color: #024873;
+    border:none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color:white;
+    margin: 1rem 0 0 1vw;}
+    footer {
+    background-color: #eaeaea;
+    text-align: center;
+    color: #024873;
+    padding: 1rem;
+    font-size: 0.8rem;
+    float: bottom;
+    position: ;
+    bottom: 0;
+    width: 100%;
+        
 }/* end of the media query*/
 /* Big screens */
 @media only screen and (min-width: 601px) {
@@ -322,3 +584,4 @@ figure {float:right;}
     width: 100%;
         
 }
+
