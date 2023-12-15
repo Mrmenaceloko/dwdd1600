@@ -93,35 +93,7 @@ header p {
 }
 
 /* Navigation styling */
-nav {
-    background-color: black;
-}
 
-nav ul {
-    list-style-type: none;
-    padding: 0 1vw;
-    margin: 0;
-    display: flex;
-}
-
-nav a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: #024873;
-    font-weight: 700;
-    display: block;
-    padding: 0.83rem ;
-}
-
-nav li.active a {
-    background-color: #000000;
-    color: #ff0000;
-
-}
-
-nav a:hover {
-    color: white;
-}
 .gallery {
     display: flex;
     flex-wrap: wrap;
