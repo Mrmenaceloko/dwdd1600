@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="It's More Than A Lifestyle, It's A Movement!">
+    <meta name="author" content="Michael Goldsberry">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="icon"type="image/x-icon" href="favicon.ico">
+    <div>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<title>Gee Related Entertainment</title>
+<body>
+    <!-- Start of the Page header -->
+    <header>
+        <img src="images/greblack.jpg" alt="site logo" width="100" height="58">
+       <div> 
+        
+        <h1>Gee Related Entertainment</h1>
+        <p>It's More Than A Lifestyle, It's A Movement!</p>
+    
+</div>
+        </header>
+    <!-- Start of the Page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li ><a href="gallery.html">Photo Gallery</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+            <li><a href="thankyou.html"></a></li>
+        </ul>
+    </nav>
+
+    <!-- Start of the Page content -->
+    <title>Contact Us</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+
+    <h1>Contact Us</h1>
+<h1>Booking Information</h1>
+        <form method="get" class="myForm" action="thankyou.html">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Phone Number*<input type="tel" name="phone" required></label>
+                <label>Email*<input type="email" name="email" required></label>
+            </fieldset>
+            
+            <fieldset>
+    <legend>Album To Perform</legend>
+    <label style="display: block; text-align: left;"><input type="radio" name="album" value="drone">Ghetto Gospel 1</label>
+    <label style="display: block; text-align: left;"><input type="radio" name="album" value="cycle">Ghetto Gospel 2</label>
+    <label style="display: block; text-align: left;"><input type="radio" name="album" value="carrier">Ghetto Gospel 3</label>
+</fieldset>
+            <fieldset>
+                <legend>Apperance Options</legend>
+                <label><input type="checkbox" name="live performance" value="choosen">Live Performance</label>
+                <label><input type="checkbox" name="Music Video Cameo" value="choosen">Music Video Cameo</label>
+                <label><input type="checkbox" name="Television Cameo" value="choosen">Television Cameo</label>
+                <label><input type="checkbox" name="Event Apperance" value="choosen">Event Apperance</label>
+            </fieldset>
+            
+            <label>Preferred Performance Time 
+                <select name="time">
+                    <option value="none">Please select</option>
+                    <option value="morning">Between 7:00am and 11:00am</option>
+                    <option value="noon">Between 11:00am and 2:00pm</option>
+                    <option value="afternoon">Between 2:00pm and 5:00pm</option>
+                    <option value="evening">Between 5:00pm and 8:00pm</option>
+                </select>
+            </label>
+            
+            <label><textarea name="comments"></textarea> Comments</label>
+            
+            <input type="submit" value="Send Request">
+            <!-- Start of the Page footer -->
+    <footer>
+        <p>&copy; 2023 &bull; Michael Goldsberry &bull; <a href="mailto:geerelatedboy@gmail.com">Email Us</a></p>
+    </footer>
