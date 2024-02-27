@@ -543,15 +543,19 @@ figure {float:right;}
     border-radius: 10px;
     color:white;
     margin: 1rem 0 0 1vw;}
-    footer {
+    
+/* Footer styling */
+footer {
     background-color: #eaeaea;
     text-align: center;
     color: #024873;
     padding: 1rem;
     font-size: 0.8rem;
-    float: bottom;
-    position: ;
+    position: fixed;
     bottom: 0;
     width: 100%;
-        
+}
+
+footer a {
+    color: #024873;
 }
