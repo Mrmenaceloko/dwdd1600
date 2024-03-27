@@ -1,3 +1,6 @@
+/*prevent problems with other browsers*/
+{box-sizing: border-box;}
+
 body {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
@@ -37,6 +40,8 @@ dd {
 header {
     background-color: #eaeaea;
     padding: 1rem 2vw;
+    display:flex;
+    align-items: flex-end;
 }
 
 header h1 {
@@ -51,35 +56,6 @@ header p {
 }
 
 /* Navigation styling */
-nav {
-    background-color: black;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0 2vw;
-    margin: 0;
-    display: flex;
-}
-
-nav a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: #024873;
-    font-weight: 700;
-    display: block;
-    padding: 0.83rem 2rem;
-}
-
-nav li.active a {
-    background-color: #000000;
-    color: #ff0000;
-
-}
-
-nav a:hover {
-    color: white;
-}
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -255,3 +231,59 @@ footer a {
     max-width:64rem;
     margin:0 auto;
 }
+/* Small screen stuff here */
+@media only screen and (max-width:800px){
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type:none;
+    }
+    nav a{ 
+    display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #024873;
+    }
+    nav .active a{
+        background-color: #024873;
+        background-image: linear-gradient(to right,  #024873,#02417A);
+        color: white;
+    }
+}/*end of the media query*/
+/*BIG screens*/
+@media only screen and (min-width:801px){
+    
+    nav {
+    border-top: solid 1px black;
+    
+}
+nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 1.2rem 1rem .3rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #024873;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: solid 2px #fff;
+}
+
+nav .active a {
+    border-bottom: solid 2px #024873;
+}
+nav a:hover {
+    color: rgb(239, 0, 24);
+}
+}/*end of the media query*/
+
