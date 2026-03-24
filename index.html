@@ -1,39 +1,110 @@
+
+Michael Gee <geerelatedboy@gmail.com>
+9:54 PM (0 minutes ago)
+to me
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>dwdd 1600 assignment list page</title>
-	</head>
-	<body>
-		<h1>[Michael Goldsberry Web Essentials Assignment Page</h1>
-		<p><a href="01test">My Test Assignment</a></p>
-		
-		<h3>Module 3</h3>
-		<p><a href="03follow-along">03 Follow Along</a></p>
-		<p><a href="03hand-coding">Hand Coding Assignment</a></p>
-		
-		<h3>Module 4</h3>
-		<p><a href="04follow-along">04 Follow Along</a></p>
-		<p><a href="04intro-css">Introduction to CSS Assignment</a></p>
-		
-		<h3>Module 5</h3>
-		<p><a href="05follow-along">05 Follow Along</a></p>
-		<p><a href="05images">Images Assignment</a></p>
-		
-		<h3>Module 6</h3>
-		<p><a href="06follow-along">06 Follow Along</a></p>
-		<p><a href="06form">Web Form Assignment</a></p>
-		
-		<h3>Module 7</h3>
-		<p><a href="07follow-along">07 Follow Along</a></p>
-		<p><a href="07advanced-css">Advanced CSS</a></p>
-		
-		<h3>Module 8</h3>
-		<p><a href="08follow-along">08 Follow Along</a></p>
-		<p><a href="08media">Media Assignment</a></p>
-		
-		<h3>Optional Capstone Activity</h3>
-		<p><a href="vacation">Vacation Web Site</a></p>
-	</body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GEE RELATED ENTERTAINMENT | Official Site</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;900&display=swap" rel="stylesheet">
+<style>
+body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+.brand-font { font-family: 'Syncopate', sans-serif; text-transform: uppercase; letter-spacing: 0.3em; }
+.gold-text { color: #D4AF37; }
+.bg-gold { background-color: #D4AF37; }
+.section-padding { padding: 100px 20px; }
+.hero-zoom { transition: transform 20s linear; transform: scale(1); }
+.hero-zoom:hover { transform: scale(1.1); }
+.nav-blur { background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); }
+.border-gold { border: 1px solid #D4AF37; }
+</style>
+</head>
+<body>
+
+<nav class="fixed top-0 w-full z-50 nav-blur py-6 px-10 flex justify-between items-center border-b border-white/10">
+<div class="brand-font text-xl font-black">GEE RELATED</div>
+<div class="hidden md:flex space-x-8 text-[10px] font-bold tracking-widest uppercase">
+<a href="#home" class="hover:text-yellow-600 transition">Home</a>
+<a href="#music" class="hover:text-yellow-600 transition">Music</a>
+<a href="#about" class="hover:text-yellow-600 transition">EPK</a>
+<a href="#contact" class="bg-white text-black px-4 py-2 hover:bg-yellow-600 transition">Bookings</a>
+</div>
+</nav>
+
+<section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+<img src="https://static.wixstatic.com/media/893c83_29699745799745c38d39023190831614~mv2.png" class="absolute inset-0 w-full h-full object-cover hero-zoom opacity-60" alt="Wall Street Art">
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
+<div class="relative z-10 text-center">
+<h1 class="brand-font text-6xl md:text-9xl mb-4 leading-none">THE <span class="gold-text">GRIND</span></h1>
+<p class="text-sm md:text-xl tracking-[0.5em] font-light uppercase mb-8">Gee Related Entertainment</p>
+<a href="#music" class="bg-gold text-black brand-font px-10 py-5 text-sm hover:bg-white transition">Enter The Movement</a>
+</div>
+</section>
+
+<section id="music" class="section-padding bg-zinc-950">
+<div class="max-w-6xl mx-auto">
+<h2 class="brand-font text-4xl mb-12 text-center underline decoration-yellow-600 underline-offset-8">Featured Visuals</h2>
+<div class="grid md:grid-cols-2 gap-10">
+<div class="bg-black border border-white/10 p-4">
+<video controls loop class="w-full h-auto shadow-2xl">
+<source src="https://video.wixstatic.com/video/893c83_7f60742a781d4e08a652e850937a0701/1080p/mp4/file.mp4" type="video/mp4">
+</video>
+<p class="mt-4 brand-font text-xs gold-text">Latest Drop: Keeping It Related</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<img src="https://static.wixstatic.com/media/893c83_702008775402484a8c90382029302111~mv2.png" class="w-full grayscale hover:grayscale-0 transition duration-500 border border-white/10">
+<img src="https://static.wixstatic.com/media/893c83_625902002302484a8c90382029302111~mv2.png" class="w-full grayscale hover:grayscale-0 transition duration-500 border border-white/10">
+</div>
+</div>
+</div>
+</section>
+
+<section id="about" class="section-padding bg-black border-y border-white/5">
+<div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2">
+<img src="https://static.wixstatic.com/media/893c83_012028888402484a8c90382029302111~mv2.png" class="w-full border-gold p-2" alt="Gee Related Executive">
+</div>
+<div class="w-full md:w-1/2 text-left">
+<h3 class="brand-font text-3xl mb-6">The <span class="gold-text">Visionary</span></h3>
+<p class="text-zinc-400 leading-loose mb-6">
+Gee Related is the architect of a new West Coast sound—bridging the gap between the hustle of the streets and the precision of the boardroom. Based in Los Angeles, Gee Related Entertainment is more than a label; it’s a standard of excellence in storytelling and production.
+</p>
+<div class="flex space-x-4">
+<div class="text-center bg-zinc-900 p-4 rounded w-1/2">
+<p class="brand-font text-xl gold-text">100%</p>
+<p class="text-[10px] uppercase tracking-tighter text-zinc-500">Authentic</p>
+</div>
+<div class="text-center bg-zinc-900 p-4 rounded w-1/2">
+<p class="brand-font text-xl gold-text">L.A.</p>
+<p class="text-[10px] uppercase tracking-tighter text-zinc-500">Certified</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="section-padding bg-zinc-900 text-center">
+<h2 class="brand-font text-5xl mb-6">GET <span class="gold-text">RELATED</span></h2>
+<p class="text-zinc-400 mb-10 max-w-lg mx-auto uppercase text-xs tracking-widest">For features, bookings, and executive inquiries.</p>
+
+<div class="max-w-lg mx-auto bg-black p-8 border border-white/10">
+<a href="mailto:geerelatedent@gmail.com" class="brand-font text-xl hover:text-yellow-600 transition block mb-4">GEERELATEDENT@GMAIL.COM</a>
+<hr class="border-white/10 my-6">
+<div class="flex justify-center space-x-6 text-zinc-500">
+<a href="#" class="hover:text-white transition">Instagram</a>
+<a href="#" class="hover:text-white transition">YouTube</a>
+<a href="#" class="hover:text-white transition">Spotify</a>
+</div>
+</div>
+</section>
+
+<footer class="py-10 text-center text-[10px] text-zinc-700 tracking-[0.3em] uppercase">
+&copy; 2026 Gee Related Entertainment. All Assets Protected.
+</footer>
+
+</body>
 </html>
