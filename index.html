@@ -3,123 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GEE RELATED ENTERTAINMENT | Official Site</title>
+<title>GEE RELATED ENT | THE ARCHIVE</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Archivo+Black&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+
 <style>
-@font-face {
-font-family: 'Goosebumps';
-src: url('fonts/goosebumps.woff2') format('woff2'); /* Ensure you have this font file in a 'fonts' folder */
-}
+body { background-color: #ffffff; color: #000000; font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; }
 
-body { background-color: #ffffff; color: #000000; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+/* THE "DOLLAR BILL" HEADER FONT */
+.currency-font { font-family: 'UnifrakturMaguntia', serif; }
 
-/* THE GOOSEBUMPS FONT APPLIED */
-.brand-font {
-font-family: 'Goosebumps', 'Metal Mania', cursive;
-text-transform: uppercase;
-letter-spacing: 0.1em;
-}
+/* THE "FAT" HEADLINE FONT */
+.fat-words { font-family: 'Archivo Black', sans-serif; text-transform: uppercase; line-height: 0.85; letter-spacing: -0.05em; }
 
-.section-padding { padding: 80px 20px; }
+.black-block { background-color: #000000; color: #ffffff; padding: 100px 20px; }
 
-/* IMAGE STYLING */
-.photo-frame { border: 1px solid #000; padding: 5px; background: #fff; transition: 0.3s; }
-.photo-frame:hover { transform: translateY(-5px); box-shadow: 10px 10px 0px #000; }
+/* THE "STREET EDIT" FOR MEDIA */
+.media-frame { border: 4px solid #000; filter: grayscale(100%) contrast(110%); transition: 0.3s; }
+.media-frame:hover { filter: grayscale(0%); transform: scale(1.01); }
 
-/* FIXED BOOKING BOX - NO OVERFLOW */
-.booking-card {
-border: 2px solid #000;
-padding: 40px;
-max-width: 100%;
-word-wrap: break-word; /* Fixes font spill */
-overflow: hidden;
-background: #f9f9f9;
-}
+.nav-blur { background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); border-bottom: 3px solid #000; }
 
-.nav-white { background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); border-bottom: 1px solid #eee; }
-
-/* VIDEO STYLING */
-video { border: 1px solid #000; }
+/* BUTTONS */
+.btn-fat { background: #000; color: #fff; padding: 20px 40px; font-weight: 900; text-transform: uppercase; display: inline-block; transition: 0.3s; }
+.btn-fat:hover { background: #333; transform: skewX(-10deg); }
 </style>
 </head>
 <body>
 
-<nav class="fixed top-0 w-full z-50 nav-white py-4 px-10 flex justify-between items-center">
-<div class="brand-font text-2xl">GEE RELATED</div>
-<div class="hidden md:flex space-x-8 text-[11px] font-black uppercase tracking-widest">
-<a href="#home" class="hover:underline">Home</a>
-<a href="#music" class="hover:underline">Music</a>
-<a href="#about" class="hover:underline">About</a>
-<a href="#contact" class="bg-black text-white px-4 py-2 hover:bg-zinc-800 transition">Bookings</a>
+<nav class="fixed top-0 w-full z-50 nav-blur py-4 px-8 flex justify-between items-center">
+<div class="currency-font text-4xl">Gee Related</div>
+<div class="hidden md:flex space-x-10 fat-words text-sm tracking-widest">
+<a href="#visuals" class="hover:underline">Visuals</a>
+<a href="#about" class="hover:underline">The Vision</a>
+<a href="#contact" class="hover:underline">Bookings</a>
 </div>
 </nav>
 
-<section id="home" class="relative h-screen flex items-center justify-center pt-20">
-<div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+<section class="min-h-screen flex items-center justify-center pt-20 px-6">
+<div class="container mx-auto grid md:grid-cols-2 gap-4 items-end">
 <div>
-<h1 class="brand-font text-7xl md:text-9xl mb-6 leading-none">THE<br>RELATABLE</h1>
-<p class="text-sm tracking-[0.3em] font-bold uppercase mb-8 border-l-4 border-black pl-4">Gee Related Entertainment / LA</p>
-<a href="#music" class="inline-block bg-black text-white brand-font px-10 py-5 text-xl hover:bg-zinc-800 transition">View Visuals</a>
+<h1 class="fat-words text-[80px] md:text-[180px]">GEE<br>RELATED</h1>
+<p class="text-2xl font-bold uppercase tracking-tighter mb-8 italic">Independent Record Label • Los Angeles</p>
 </div>
-<div class="photo-frame">
-<img src="images/image.png" class="w-full grayscale contrast-125 h-[500px] object-cover" alt="Gee Related Hero">
+<div class="pb-10">
+<img src="images/image.png" class="media-frame w-full h-[500px] object-cover" alt="Gee Related Hero">
 </div>
 </div>
 </section>
 
-<section id="music" class="section-padding">
-<div class="max-w-6xl mx-auto">
-<h2 class="brand-font text-5xl mb-12 border-b-2 border-black pb-4">LATEST RELEASES</h2>
-<div class="grid md:grid-cols-2 gap-12">
-<div class="bg-white">
-<video controls class="w-full">
-<source src="videos/IMG_2163.mov" type="video/quicktime">
+<section id="visuals" class="black-block">
+<div class="max-w-7xl mx-auto">
+<h2 class="fat-words text-6xl md:text-9xl mb-12 text-center">LATEST<br>VISUALS</h2>
+<div class="grid md:grid-cols-2 gap-10">
+<div class="media-frame bg-zinc-900 aspect-video overflow-hidden">
+<video controls class="w-full h-full object-cover">
+<source src="videos/Tequila-Gee Related ft Prozik.mov" type="video/quicktime">
 </video>
-<p class="mt-4 font-black uppercase text-xs">Visual 001: Street Documentary</p>
 </div>
-<div class="grid grid-cols-2 gap-4">
-<img src="images/image.png" class="photo-frame w-full h-48 object-cover grayscale">
-<img src="images/image.png" class="photo-frame w-full h-48 object-cover grayscale">
+<div class="media-frame bg-zinc-900 aspect-video overflow-hidden">
+<video controls class="w-full h-full object-cover">
+<source src="videos/IMG_0212.mov" type="video/quicktime">
+</video>
 </div>
 </div>
+<p class="currency-font text-center text-4xl mt-12 opacity-50">In God We Trust. All Others Pay Cash.</p>
 </div>
 </section>
 
-<section id="about" class="section-padding bg-zinc-50 border-y border-zinc-200">
-<div class="max-w-4xl mx-auto text-center">
-<h3 class="brand-font text-5xl mb-8 italic">THE VISIONARY</h3>
-<p class="text-xl leading-relaxed mb-10 text-zinc-700">
-Independent artist. Label head. Cultural architect. Gee Related bridges the gap between the Los Angeles pavement and executive vision.
+<section id="about" class="py-24 px-6">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="md:w-1/2">
+<img src="images/image.png" class="media-frame w-full h-[600px] object-cover grayscale" alt="The Visionary">
+</div>
+<div class="md:w-1/2">
+<h3 class="fat-words text-7xl mb-6">THE<br>MOGUL</h3>
+<p class="text-3xl leading-tight font-light mb-8">
+Bridging the gap between the <span class="font-bold">street documentary</span> and <span class="font-bold underline">executive precision</span>.
 </p>
-<div class="photo-frame inline-block">
-<img src="images/image.png" class="w-64 h-64 object-cover" alt="Gee Related Executive">
+<a href="#contact" class="btn-fat">Request EPK</a>
 </div>
 </div>
 </section>
 
-<section id="contact" class="section-padding flex justify-center">
-<div class="booking-card w-full max-w-2xl text-center">
-<h2 class="brand-font text-5xl md:text-6xl mb-6">BOOKING</h2>
-<p class="uppercase tracking-widest text-xs font-bold mb-8">Executive Inquiries & Features</p>
+<section id="contact" class="black-block text-center border-t-8 border-zinc-800">
+<div class="max-w-4xl mx-auto">
+<h4 class="currency-font text-5xl md:text-7xl mb-4">The Booking Inquiries</h4>
+<h2 class="fat-words text-5xl md:text-[100px] break-all mb-12">
+GEERELATEDENT<br>@GMAIL.COM
+</h2>
 
-<a href="mailto:geerelatedent@gmail.com" class="brand-font text-xl md:text-3xl break-words hover:text-zinc-500 transition border-b border-black">
-GEERELATEDENT@GMAIL.COM
-</a>
-
-<div class="mt-12 flex justify-center space-x-8 font-black text-[10px] tracking-widest uppercase">
-<a href="#" class="hover:underline">Instagram</a>
-<a href="#" class="hover:underline">YouTube</a>
-<a href="#" class="hover:underline">Spotify</a>
+<div class="flex justify-center space-x-12 fat-words text-2xl border-t border-zinc-700 pt-10">
+<a href="#" class="hover:text-zinc-400">Instagram</a>
+<a href="#" class="hover:text-zinc-400">YouTube</a>
+<a href="#" class="hover:text-zinc-400">Spotify</a>
 </div>
+
+<p class="mt-20 text-[10px] tracking-[1em] uppercase opacity-40">© 2026 Gee Related Entertainment / No Trust No Love</p>
 </div>
 </section>
-
-<footer class="py-10 text-center text-[10px] font-black tracking-[0.4em] uppercase">
-© 2026 Gee Related Entertainment.
-</footer>
 
 </body>
-</html>
-
 </html>
